@@ -5,10 +5,12 @@ import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Service
-public class CarServiseImpl implements CarService{
+public class CarServiseImpl implements CarService {
 
     private List<Car> listCars;
+
     {
         listCars = new ArrayList<>();
         listCars.add(new Car("1", "red", "11"));
@@ -19,15 +21,17 @@ public class CarServiseImpl implements CarService{
         listCars.add(new Car("6", "blue3", "66"));
     }
 
-    public List<Car>getListCars(){
+    public List<Car> getListCars() {
         return listCars;
     }
-    public List<Car> getCars(int count){
-        List<Car>carListCount = new ArrayList<>();
-        for (int i = 0; i < count ; i++) {
+
+    public List<Car> getCars(int count) {
+        List<Car> carListCount = new ArrayList<>();
+        for (int i = 0; i < count; i++) {
             carListCount.add(listCars.get(i));
 
-        }return carListCount;
+        }
+        return carListCount;
     }
 
 }

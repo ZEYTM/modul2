@@ -12,6 +12,7 @@ public class Car {
 
     public Car() {
     }
+
     public Car(String model, String color, String series) {
         this.model = model;
         this.color = color;
@@ -63,8 +64,6 @@ public class Car {
                 ", series='" + series + '\'' +
                 '}';
     }
-
-
 
 
 }
